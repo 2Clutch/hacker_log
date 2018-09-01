@@ -3,6 +3,13 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+app.set('view engine', 'pug');
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/form', function(request, response) {
+	return response.render('form');
+});
+
 app.listen(3000, function() {
 	console.log('Hello World');
 });
