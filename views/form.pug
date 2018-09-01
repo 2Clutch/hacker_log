@@ -1,0 +1,13 @@
+extends base.pug
+
+block content
+	form(action="/submit", method="post")
+		input(type="text", name="Full Name");
+		input(type="text", name="Team Name");
+		input(type="text", name="Project Name");
+		input(type="field", name="Update");
+		input(type="submit", name="Submit");
+
+
+We want to build sort of a "hacker log."
+Through a simple HTML form, users can post short updates (their name and a short post of what they're doing at the time, and maybe something else like their project name or team name or something). Think sort of a Twitter vibe, but with slightly longer posts. 
