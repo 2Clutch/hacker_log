@@ -20,3 +20,11 @@ Once you've created the database, you will want to create a table. There's alrea
 ```commandline
 node database.js
 ```
+
+...
+
+To start the application, run:
+```commandline
+node app.js
+```
+And naviguate to `localhost:8080` in your browser.
