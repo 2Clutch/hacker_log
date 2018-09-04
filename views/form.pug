@@ -2,8 +2,26 @@ extends base.pug
 
 block content
 	form(action="/submit-form", method="post")
-		input(type="text", name="Full Name")
-		input(type="text", name="Team Name")
-		input(type="text", name="Project Name")
-		input(type="field", name="Update")
-		input(type="submit", name="Submit")
+		<div>
+			label(for='Full Name') Full Name 
+			input(type="text", name="Full Name")
+		</div>
+		<br /> 
+		<div>
+			label(for='Team Name') Team Name 
+			input(type="text", name="Team Name")
+		</div>
+		<br />
+		<div>
+			label(for='Project Name') Project Name 
+			input(type="text", name="Project Name")
+		</div>
+		<br />
+		<div>
+			label(for='Update') Update 
+			input(type="message" rows="10" cols="30", name="Update")
+		</div>
+		<br />
+		<div>
+			input(type="submit", name="Submit")
+		</div>
