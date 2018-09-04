@@ -14,6 +14,10 @@ app.get('/form', function(request, response) {
 	return response.render('form');
 });
 
+app.post('/submit-form', function(request, response) {
+	return response.send(request.body);
+});
+
 app.listen(8080, function() {
 	console.log('Hello World');
 });
